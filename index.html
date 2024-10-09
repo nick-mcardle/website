@@ -4,9 +4,23 @@
     <title>About Nick</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body style="background-color: black;">
-      <h1 style ="color: red" class="title">Hello World! </h1>
-      <p style="color: red" id="currentTime"></p>
+      <h1 style ="color: red" class="title">Nick McArdle's Portfolio</h1>
+      
+      <h2 style = "color: red" >About Me</h2>
+      <p style = "color: red">I am currently 22 years old</p>
+      <p style="color: red">Current Date: <span style = "color: red" id="datetime"></span></p> 
       <script src="script.js"></script>
+      
+      
+      
+      
   </body>
+  
+  <script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+
 </html>
